@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/gray4"
+  
+    android:padding="15dp"
+
+    tools:context=".account.UserSignUpActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/item_border"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:gravity="center"
+            android:layout_marginHorizontal="11dp"
+            android:layout_marginVertical="15dp"
+
+            android:padding="15dp"
+            android:paddingTop="5dp"
+            >
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+
+
+
+
+                android:background="@drawable/ic_launcher_icon_logo2"
+                android:contentDescription="@string/login_name"
+                />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="11dp"
+
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="@string/edit_game" />
+        <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextGameName"
+        style="@style/editText"
+        android:hint="@string/game_name"
+        android:inputType="text"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextDescription"
+            style="@style/editText"
+            android:minHeight="70dp"
+            android:gravity="top"
+            android:hint="@string/game_description"
+
+            android:inputType="textMultiLine"
+            android:minLines="3"
+
+          />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextGameLink"
+            style="@style/editText"
+            android:hint="@string/game_link"
+            android:inputType="text"
+
+            />
+     
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonEditGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:radius="15dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_background"
+       android:paddingEnd="35dp"
+        android:paddingStart="35dp"
+        android:textSize="16sp"
+        android:text="@string/save_change"
+      android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        />
+
+  
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

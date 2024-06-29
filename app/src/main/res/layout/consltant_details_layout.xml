@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center"
+    android:layout_margin="3dp"
+    android:paddingHorizontal="6dp"
+    android:paddingVertical="6dp"
+
+    android:id="@+id/consultantDetailsLayout"
+
+    >
+<TextView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:layout_marginTop="2dp"
+    android:gravity="center_vertical"
+    android:textSize="16sp"
+    android:textColor="@color/black"
+    android:text="@string/Speciality_info"
+   />
+<EditText
+    android:id="@+id/editTextSpeciality"
+    style="@style/editText"
+
+    android:hint="@string/speciality"
+    android:inputType="text"
+
+    />
+
+
+<EditText
+    android:id="@+id/editTextExperienceYear"
+    style="@style/editText"
+    android:hint="@string/ExperienceYear"
+
+    android:inputType="number"
+    />
+<TextView
+    android:id="@+id/textViewImageProduct"
+    style="@style/textView"
+    android:text= "@string/certificate_image"
+
+    />
+<RelativeLayout
+
+    android:id="@+id/ll"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+
+    android:layout_marginTop="5dp"
+
+    android:layout_marginBottom="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewCertification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/certificate_image"
+        android:src="@drawable/photo_placeholder" />
+
+    <ImageButton
+        android:id="@+id/buttonChooseImage"
+        android:layout_width="40dp"
+        android:contentDescription="@string/select_certificate_image"
+
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_circle_outline_black_24dp"  />
+</RelativeLayout>
+</LinearLayout>

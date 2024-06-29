@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="3dp"
+android:paddingHorizontal="6dp"
+    android:paddingVertical="6dp"
+
+    android:id="@+id/personalDetailsLayout"
+
+        >
+    <TextView
+android:id="@+id/togglePersonalDetailsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="@string/Personal_info" />
+
+
+
+
+            <EditText
+                android:id="@+id/editTextFirstName"
+                style="@style/editText"
+                android:hint="@string/f_name"
+                android:inputType="textPersonName"
+
+
+                android:padding="10dp"  />
+            <EditText
+                android:id="@+id/editTextLastName"
+                style="@style/editText"
+                android:hint="@string/l_name"
+                android:inputType="textPersonName"
+
+
+                android:padding="10dp"  />
+
+        <EditText
+            android:id="@+id/editTextDateOfBirth"
+            style="@style/editText"
+
+            android:clickable="false"
+            android:hint="@string/DateOfBirth"
+android:focusable="false"
+            />
+        <EditText
+            android:id="@+id/editTextMobile"
+            style="@style/editText"
+
+            android:inputType="phone"
+            android:hint="@string/mobile"
+
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/male"
+                android:checked="true"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"  />
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/femele"
+
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"  />
+
+        </RadioGroup>
+
+</LinearLayout>

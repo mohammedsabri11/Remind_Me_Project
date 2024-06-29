@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray4"
+    android:padding="15dp"
+
+
+    tools:context=".SplashActivity">
+
+    <RelativeLayout
+
+
+        style="@style/continerRelativeLayout"
+
+        >
+        <ImageView
+            android:id="@+id/logo"
+            style="@style/logoImageView"
+            />
+
+
+    <TextView
+android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+android:layout_below="@id/logo"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textFontWeight="600"
+        android:textColor="@color/black"
+
+        android:text="@string/app_name"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+       android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_below="@id/title"
+       >
+        <TextView
+          
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#e41078ff"
+            android:text="@string/wlc_sign_up" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonConsultantRegister"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+
+        android:layout_marginHorizontal="45dp"
+        android:background="@drawable/button_background"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+
+                android:text="@string/consultant" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPatientRegister"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+
+
+        android:layout_marginHorizontal="45dp"
+        android:background="@drawable/button_background"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+
+        android:text="@string/patient" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+       android:layout_gravity="center"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+
+                 android:textSize="18sp"
+                android:textColor="@color/gray3"
+                android:text="@string/or" />
+            <TextView
+                android:id="@+id/textViewContinueLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+
+                android:textSize="18sp"
+                android:textColor="#e41078ff"
+                android:text="@string/already_member_signin" />
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

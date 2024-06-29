@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+android:paddingHorizontal="15dp"
+    android:paddingVertical="20dp"
+android:layout_marginHorizontal="30dp"
+    android:layout_marginVertical="20dp"
+    android:background="@drawable/dialog_border"
+
+>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/IVcon"
+        android:background="@drawable/ic_launcher_icon_logo2"
+      android:layout_marginBottom="10dp"
+android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+android:layout_below="@id/IVcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Select User  you  want share game with"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:id="@+id/title"
+        android:textStyle="bold"
+
+        />
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/userSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        android:prompt="@string/select_user" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmButton"
+        android:layout_marginTop="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Share"
+        android:layout_below="@id/userSpinner"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancelButton"
+        android:layout_marginTop="21dp"
+      android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@id/userSpinner"/>
+</RelativeLayout>

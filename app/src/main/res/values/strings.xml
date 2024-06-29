@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Remind Me</string>
+
+    <string name="start">Start</string>
+    <string name="wlcOME_to">Welcome to  </string>
+    <string name="login_name">LogIn </string>
+    <string name="login_In">Log In </string>
+    <string name="wlc_sign_up">Sign up to continue</string>
+    <string name="sign_up">Sign up </string>
+    <string name="log_out">Log out </string>
+    <string name="email">Email </string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Confirm Password</string>
+    <string name="already_member">Already have an account, </string>
+    <string name="already_member_signin">Sign in?</string>
+
+    <string name="patient">Patient</string>
+    <string name="consultant">Consultant</string>
+    <string name="dont_have">Don\'t have  account, </string>
+    <string name="signup">Sign up? </string>
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="DateOfBirth">Date Of Birth</string>
+    <string name="male">Male</string>
+    <string name="femele">Female</string>
+    <string name="health_status">Health Status</string>
+    <string name="preview">preview</string>
+    <string name="certificate_image">Certificate Image</string>
+    <string name="select_certificate_image">select certificate Image</string>
+    <string name="error_empty_dateOfBirth">date Of Birth Required  </string>
+    <string name="rating_and_review">Ratings and reviews</string>
+    <string name="error_empty_f_name">First Name Required</string>
+    <string name="error_empty_l_name">Last Name Required</string>
+    <string name="error_empty_email">Email Required</string>
+    <string name="error_error_email">Invalid Email</string>
+    <string name="error_empty_password">Passwords Required</string>
+    <string name="error_empty_reminder_date">Appointment Date  Required </string>
+    <string name="error_empty_reminder_details"> Appointment Details Required</string>
+    <string name="error_select_image">Image Error</string>
+    <string name="error_empty_game_name"> Game\'s Name  Required </string>
+    <string name="error_empty_game_link"> Link  Required </string>
+    <string name="error_empty_game_description"> description Required </string>
+    <string name="error_weak_password">Weak Password:password must  contain at least 8 alphabetic character ,one capital character ,1 special case character ,one number</string>
+    <string name="error_empty_Health_Status_Details"> Health Status Details Required </string>
+    <string name="no_server_response">no server response</string>
+    <string name="log_out_message_confirm">Are you Sure,you Want to log out </string>
+    <string name="game_delete_message_confirm">Are you sure you want to delete this Game? This action cannot be undone. \n Deleting this Game will remove all associated data.\n Proceed with deletion? </string>
+    <string name="query_delete_message_confirm">Are you Sure,you Want to delete this Query  </string>
+    <string name="reminder_delete_message_confirm">Are you Sure,you Want to delete this Reminder  </string>
+    <string name="activate_message_confirm">This action will enable the user account for login.\nDo you wish to activate this user? They will regain access to the system.   </string>
+    <string name="de_activate_message_confirm">This action will disable the user account.\nAre you sure you want to deactivate this user? They will lose access to the system.      </string>
+
+    <string name="evaluation_delete_message_confirm">Are you sure you want to delete this evaluationItem? This action cannot be undone. </string>
+
+    <string name="confirm_title">Confirm </string>
+    <string name="do_operation_message">operation in Progress</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="add_new_game">Add New Game</string>
+    <string name="edit_game">Edit Game</string>
+    <string name="save_change">Save Change</string>
+    <string name="game_name">Game Name</string>
+    <string name="game_description">Game Description</string>
+    <string name="game_link">Game Link</string>
+    <string name="game_save">Save Game</string>
+    <string name="select_user">select user</string>
+    <string name="date_time">yyyy-mm-dd hh:mm</string>
+    <string name="user_tab_text_1">Games</string>
+    <string name="user_tab_text_2">Ask</string>
+    <string name="user_tab_text_3">Reminder</string>
+    <string name="user_tab_text_4">Explore Alzheimer\'s.</string>
+
+    <string name="consultant_tab_text_1">Games</string>
+    <string name="consultant_tab_text_2">Questions</string>
+    <string name="consultant_tab_text_3">Evaluations</string>
+    <string name="admin_tab_text_1">Consultants</string>
+    <string name="admin_tab_text_2">Users</string>
+    <string name="title_activity_main_user2">Home</string>
+    <string name="no_data_available">no data available</string>
+    <string name="remember_me">Remember Me</string>
+
+    <string name="title_activity_main_consultant">MainConsultantActivity</string>
+    <string name="Reminder_send">Save Reminder</string>
+    <string name="add_new_reminder">Add New Reminder</string>
+    <string name="about_app"> This app is tailored to enhance memory, cognitive function, and daily living activities for individuals living with Alzheimer\'s. With user-friendly features and helpful tools, we aim to provide a sense of comfort and empowerment. Thank you for choosing our app to accompany you on this important path.</string>
+    <string name="Personal_info">Personal Information</string>
+    <string name="account_info">"Account Information "</string>
+    <string name="mobile">Phone Number</string>
+    <string name="speciality">Speciality</string>
+    <string name="ExperienceYear">Experience Year</string>
+    <string name="Speciality_info">Speciality Information</string>
+    <string name="error_empty_speciality"> Speciality  Required </string>
+    <string name="error_empty_Experience_Year"> Experience Year  Required </string>
+    <string name="error_empty_phone_number"> Phone Number  Required </string>
+    <string name="i_am_care_provider"> i am care provider </string>
+    <string name="patient_health_status">Patient Health Status</string>
+    <string name="provider_info">Care Provider Information</string>
+    <string name="or">Or Go to </string>
+    <string name="evaluationItem">Evaluation</string>
+    <string name="gender">Gender</string>
+    <string name="details_remindert">reminder details</string>
+    <string name="reminder_date">reminder date</string>
+    <string name="title_search">Search Here</string>
+    <string name="save">save</string>
+    <string name="error_empty_provider_l_name">provider last name required</string>
+    <string name="error_empty_provider_f_name">provider first name required</string>
+    <string name="error_mismatch_password">password mismatch</string>
+
+    <string name="email_pattern">^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$</string>
+    <string name="error_invalid_phone">invalid phone number,phone number start with 05</string>
+
+</resources>
+
+

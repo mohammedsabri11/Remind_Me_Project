@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/layout_background"
+    android:padding="10dp"
+>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Certificate Image"
+      android:minHeight="433dp"
+android:layout_marginTop="10dp"
+        android:gravity="top" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center_horizontal">
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonHide"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:text="Hide"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_style3"/>
+    </LinearLayout>
+</LinearLayout>

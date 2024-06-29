@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/gray4"
+  
+    android:padding="15dp"
+
+    tools:context=".account.UserSignUpActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/continerLinearLayout"
+        >
+        <ImageView
+
+            style="@style/logoImageView"
+
+            />
+
+        <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="15dp"
+   android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="@string/sign_up" />
+
+        <include  layout="@layout/account_credentials_layout" />
+            <include   layout="@layout/personal_details_layout" />
+
+            <!-- Personal Details fields -->
+
+
+
+        <include  layout="@layout/consltant_details_layout" />
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRegister"
+            style="@style/submitButton"
+        android:text="@string/sign_up" 
+      android:layout_gravity="center"
+        />
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+
+                android:textSize="16dp"
+                android:textColor="@color/gray3"
+                android:text="@string/already_member" />
+            <TextView
+                android:id="@+id/textViewLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+
+                android:textSize="16dp"
+                android:textColor="#e41078ff"
+                android:text="@string/already_member_signin" />
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

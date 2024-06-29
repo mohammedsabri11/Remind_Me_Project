@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:padding="12dp"
+    android:layoutDirection="rtl"
+android:textDirection="rtl"
+android:layout_marginBottom="8dp"
+android:layout_marginEnd="8dp"
+android:id="@+id/commentRecyclerView"
+android:background="@drawable/item_border"
+
+
+
+android:layout_height="wrap_content">
+<ImageButton
+    android:layout_width="35dp"
+    android:layout_height="26dp"
+    android:layout_marginStart="4dp"
+
+    android:layout_alignParentStart="true"
+    android:id="@+id/userProfile"
+
+    android:layout_marginEnd="11dp"
+
+
+
+
+    android:background="@drawable/profile"
+    />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toEndOf="@+id/userProfile"
+    android:layout_toStartOf="@id/deleteReviewImageButton"
+    android:text="User Name"
+    android:textSize="12sp"
+
+    android:padding="6dp"
+
+    android:id="@+id/userNameTextView"
+    android:textStyle="bold"
+
+
+
+    />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:rating="3"
+        android:layout_below="@id/userNameTextView"
+        android:layout_alignParentStart="true"
+     android:layout_marginTop="6dp"
+        style="@style/SmallRatingBar"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="date"
+        android:textSize="12sp"
+android:layout_marginStart="12dp"
+        android:layout_below="@id/userNameTextView"
+
+        android:layout_toEndOf="@id/ratingBar"
+        android:id="@+id/dateReviewTextView"
+        android:layout_alignParentEnd="true"
+
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:text="Comment"
+    android:textSize="12sp"
+    android:layout_alignParentStart="true"
+    android:layout_below="@id/ratingBar"
+
+    android:padding="5dp"
+    android:id="@+id/reviewTextView"
+android:layout_alignParentEnd="true"
+
+    />
+    <ImageButton
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/deleteReviewImageButton"
+       
+        android:layout_marginEnd="11dp"
+
+
+android:visibility="gone"
+
+        android:background="@drawable/baseline_delete_forever_24"
+        />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#FF000000</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#B3DFEA</color>
+    <color name="colorPrimaryDark2">#EFEFF3</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#94b9ff</color>
+    <color name="purple_700">#94b9ff</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#C9131313</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="logo">#cdffd8</color>
+    <color name="logo2">#94b9ff</color>
+    <color name="logo4">#1E8C52FF</color>
+    <color name="gray">#FFFFF3</color>
+    <color name="gray2">#CCCCCB</color>
+    <color name="gray3">#959592</color>
+    <color name="gray4">#ECF1F1</color>
+    <color name="black2">#000000</color>
+    <!-- Example background color -->
+    <!-- Example text color -->
+    <color name="custom_positive_button_color">#FF4081</color>
+    <color name="custom_negative_button_color">#4CAF50</color>
+    <color name="custom_dialog_background_color">#FFFFFF</color>
+
+
+</resources>
+
+

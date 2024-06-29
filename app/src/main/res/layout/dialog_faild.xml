@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:paddingTop="25dp"
+    android:background="@drawable/dialog_border"
+    android:paddingBottom="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+  >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/IVcon"
+android:background="@drawable/ic_error_black_24dp"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="22dp"
+
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:id="@+id/message"
+   
+        android:textColor="#ff3333"
+        android:text="error"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_faild"
+        android:layout_gravity="center_horizontal"
+        android:text="Close"
+        android:id="@+id/buttonClose"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+   
+</LinearLayout>

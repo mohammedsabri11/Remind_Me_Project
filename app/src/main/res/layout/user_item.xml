@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+
+    android:layout_margin="10dp"
+    android:background="@drawable/card_style"
+
+    >
+
+
+
+               <com.google.android.material.imageview.ShapeableImageView
+                   android:layout_width="45dp"
+                   android:layout_height="45dp"
+        android:contentDescription="profile"
+
+                   android:padding="3dp"
+        app:strokeWidth="1dp"
+        android:layout_weight="1"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="6dp"
+        android:layout_gravity="end"
+        android:id="@+id/profile"
+        app:strokeColor="@android:color/darker_gray"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+
+        android:layout_marginStart="0dp"
+        />
+
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_height="36dp"
+        android:layout_width="wrap_content"
+android:gravity="center_vertical"
+        android:layout_toEndOf="@id/profile"
+        android:layout_toStartOf="@id/control_Layout"
+        android:text="@string/full_name"
+android:textColor="@color/black"
+        />
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/control_Layout"
+        android:layout_width="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content">
+<ImageButton
+android:id="@+id/activate_user"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:contentDescription="verified"
+    android:layout_alignParentEnd="true"
+android:background="@drawable/sharp_account_circle_off_24" />
+    <ImageButton
+        android:id="@+id/deActivate_user"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="verified"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/sharp_account_circle_24_on"    android:visibility="gone"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

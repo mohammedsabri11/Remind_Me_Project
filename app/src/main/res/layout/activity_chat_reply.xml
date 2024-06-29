@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    android:orientation="vertical"
+    tools:context=".user.ChatActivity">
+    <include  android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <include  android:paddingTop="25dp" android:id="@+id/rec" android:paddingBottom="20dp"  android:layout_below="@id/my_toolbar" android:layout_height="match_parent" android:layout_width="match_parent"  android:layout_above="@+id/form" android:layout_marginTop="5dp" layout="@layout/fragment_content"/>
+
+    <LinearLayout
+    android:id="@+id/form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    android:paddingBottom="2dp" >
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/messageEditText"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="Type your query Here"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toLeftOf="@+id/sendMessageButton"
+        android:layout_weight="0.72"
+        android:ems="10"
+        android:maxHeight="80dp" />
+
+    <ImageButton
+        android:id="@+id/buttonSendQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/send_button"
+        android:text="d" />
+</LinearLayout>
+
+
+</RelativeLayout>
+
