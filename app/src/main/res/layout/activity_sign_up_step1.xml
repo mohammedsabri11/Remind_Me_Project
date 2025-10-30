@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:background="@color/gray4"
-  
     android:padding="15dp"
     android:paddingBottom="25dp"
-    tools:context=".account.UserSignUpActivity">
+    tools:context=".account.SignUpStep1Activity">
     <ScrollView
         android:layout_width="match_parent"
 
@@ -31,17 +30,10 @@
         android:textSize="22sp"
         android:textColor="@color/black"
         android:text="@string/sign_up" />
-
-        <!-- Personal Details fields -->
-        <include   layout="@layout/personal_details_layout" />
-
-
-        <!-- Personal Details fields -->
-        <include   layout="@layout/patient_health_details_layout" />
-
+        <include  layout="@layout/account_credentials_layout" />
 
         <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonRegister"
+        android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:radius="15dp"
@@ -51,7 +43,7 @@
 
         android:paddingHorizontal="35dp"
         android:textSize="16sp"
-        android:text="@string/sign_up" 
+        android:text="@string/next" 
       android:layout_gravity="center"
         />
 

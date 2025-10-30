@@ -118,11 +118,17 @@ public class ConsultantSignUpActivity extends SignUpActivity {
             register(getParameters());
         }
     }
-    @Override
-    protected boolean validateInput() {
-        boolean isValid = super.validateInput();
+    
+    private boolean validateInput() {
+        boolean isValid = true;
+        isValid = isFieldNotEmpty(firstName, R.string.error_empty_f_name) && isValid;
+        isValid = isFieldNotEmpty(lastName, R.string.error_empty_l_name) && isValid;
+        isValid = isFieldNotEmpty(dateOfBirth, R.string.error_empty_dateOfBirth) && isValid;
+        isValid = isFieldNotEmpty(mobile, R.string.error_empty_phone_number) && isValid;
+        isValid = phoneValidator() && isValid;
         isValid = isValid && isFieldNotEmpty(speciality, R.string.error_empty_speciality);
         isValid = isValid && isFieldNotEmpty(experienceYear, R.string.error_empty_Experience_Year);
+        genderSelected();
 
         if (bitmap == null) {
             buttonChooseImage.setFocusable(true);
@@ -131,6 +137,16 @@ public class ConsultantSignUpActivity extends SignUpActivity {
         }
 
         return isValid;
+    }
+    
+    private boolean phoneValidator() {
+        String value = mobile.getText().toString();
+        if (!value.matches("^05\\d{8}$")) {
+            mobile.setError(getString(R.string.error_invalid_phone));
+            mobile.requestFocus();
+            return false;
+        }
+        return true;
     }
 
     @Override
@@ -152,11 +168,3 @@ public class ConsultantSignUpActivity extends SignUpActivity {
 
 
 }
-
-
-
-
-
-
-
-
