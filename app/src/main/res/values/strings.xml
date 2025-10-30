@@ -78,6 +78,7 @@
     <string name="title_activity_main_user2">Home</string>
     <string name="no_data_available">no data available</string>
     <string name="remember_me">Remember Me</string>
+    <string name="next">Next</string>
 
     <string name="title_activity_main_consultant">MainConsultantActivity</string>
     <string name="Reminder_send">Save Reminder</string>

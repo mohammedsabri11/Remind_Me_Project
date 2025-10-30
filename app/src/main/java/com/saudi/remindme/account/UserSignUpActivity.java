@@ -6,7 +6,6 @@ import static com.saudi.remindme.process.Process.USER_SIGN_UP;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.EditText;
 
 import com.saudi.remindme.R;
@@ -15,8 +14,7 @@ import java.util.Map;
 
 
 public class UserSignUpActivity extends SignUpActivity {
-    EditText providerFirstName, providerLastName, healthStatusDetails;
-    CheckBox isCareProvider;
+    EditText healthStatusDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +27,6 @@ public class UserSignUpActivity extends SignUpActivity {
     @Override
     protected void init() {
         super.init();
-        isCareProvider = findViewById(R.id.checkboxIsCareProvider);
-        isCareProvider.setVisibility(View.VISIBLE);
-        providerFirstName = findViewById(R.id.editTextProviderFirstName);
-        providerLastName = findViewById(R.id.editTextProviderLastName);
         healthStatusDetails = findViewById(R.id.editTextHealthStatus);
         findViewById(R.id.buttonRegister).setOnClickListener(this);
         findViewById(R.id.textViewLogIn).setOnClickListener(this);
@@ -60,17 +54,29 @@ public class UserSignUpActivity extends SignUpActivity {
             register(getParameters());
         }
     }
-    @Override
-    protected boolean validateInput() {
-        boolean isValid = super.validateInput();
+    
+    private boolean validateInput() {
+        boolean isValid = true;
 
-
+        isValid = isFieldNotEmpty(firstName, R.string.error_empty_f_name) && isValid;
+        isValid = isFieldNotEmpty(lastName, R.string.error_empty_l_name) && isValid;
+        isValid = isFieldNotEmpty(dateOfBirth, R.string.error_empty_dateOfBirth) && isValid;
+        isValid = isFieldNotEmpty(mobile, R.string.error_empty_phone_number) && isValid;
+        isValid = phoneValidator() && isValid;
         isValid = isFieldNotEmpty(healthStatusDetails, R.string.error_empty_Health_Status_Details) && isValid;
-        isValid = isFieldNotEmpty(providerFirstName, R.string.error_empty_provider_f_name) && isValid;
-        isValid = isFieldNotEmpty(providerLastName, R.string.error_empty_provider_l_name) && isValid;
-
+        genderSelected();
 
         return isValid;
+    }
+    
+    private boolean phoneValidator() {
+        String value = mobile.getText().toString();
+        if (!value.matches("^05\\d{8}$")) {
+            mobile.setError(getString(R.string.error_invalid_phone));
+            mobile.requestFocus();
+            return false;
+        }
+        return true;
     }
 
 
@@ -78,7 +84,6 @@ public class UserSignUpActivity extends SignUpActivity {
     protected Map<String, String> getParameters() {
         Map<String, String> parms = super.getParameters();
         parms.put("userType", USER);
-        parms.put("careProviderName", providerFirstName.getText().toString() + " " + providerLastName.getText().toString());
         parms.put("healthStatusDetails", healthStatusDetails.getText().toString());
         parms.put("op", USER_SIGN_UP);
         return parms;
@@ -86,11 +91,3 @@ public class UserSignUpActivity extends SignUpActivity {
 
 
 }
-
-
-
-
-
-
-
-
